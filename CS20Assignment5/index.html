@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="index.js"></script>
+  <style>
+    .box {
+      margin: 30px;
+      padding: 30px;
+      background: #b7b3ea;
+      margin-right: 30%;
+      margin-left: 30%;
+    }
+
+    .userInputs {
+      font-size: 20px;
+      text-align: left;
+    }
+  </style>
+  
+</head>
+<body style="background-color:#f2edef; color:#000000; text-align: center;">
+
+    
+
+<div class="box">
+  <h2>Amicable Calculator</h2>
+  <form>
+    <h4 >Please provide two numbers to see if they are amicable</h4>
+    <div class="userInputs">
+      <label>First Number:</label><br>
+      <input type="text" id="numone" style="width: 100%; height: 30px;" placeholder="Enter a number here."/>
+      <br>
+      <label>Second Number:</label><br>
+      <input type="text" id="numtwo" style="width: 100%; height: 30px;" placeholder="Enter a number here."/>
+    </div>
+    <div class="userInputs" style="text-align: center;">
+      <br>
+      <button type="button" id="submit" onclick="inputnum()">Calculate</button>
+    </div>
+  </form>
+</div>
+<div class="box">
+  <h2>Results:</h2>
+  <div id="result"></div>
+  <div id="factors"></div>
+</div>
+</body>
+</html>
